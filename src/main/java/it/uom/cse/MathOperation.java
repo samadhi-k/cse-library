@@ -15,6 +15,21 @@ public class MathOperation {
         return operand1 - operand2;
     }
 
+    public static int factorial(int n) {
+        int ans = 1;
+        for (int i = 2; i < n + 1; i++) {
+            ans *= i;
+        }
+        return ans;
+    }
+
+    public static int fib(int n) {
+        if (n == 1 || n == 0) {
+            return 1;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
+
     public static int sumOfPrimes(int n){
             int sum = 0;
             for (int p : listPrimes(n- 1))
